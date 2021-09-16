@@ -59,6 +59,7 @@ Rails.application.routes.draw do
   namespace :public do
     resources :items, only: [:index, :show]
   end
+
   namespace :public do
     resources :members, only: [:edit, :update]
     get 'members/mypage' => 'members#show', as: 'mypage'
