@@ -1,4 +1,4 @@
-class Public::OrderController < ApplicationController
+class Public::OrdersController < ApplicationController
   def index
   end
 
@@ -7,13 +7,13 @@ class Public::OrderController < ApplicationController
 
   def new
   end
-  
+
   def create
   end
-  
+
   def complete
   end
-  
+
   def confirm
   end
 end
