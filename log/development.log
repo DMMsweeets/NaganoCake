@@ -18570,3 +18570,550 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 211.123.238.51 at 2021-09-17 06:33:56 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 13196ms (Views: 13175.0ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome-sprockets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/members/sign_up" for 211.123.238.51 at 2021-09-17 06:34:20 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::Members::RegistrationsController#new as HTML
+  Rendering public/members/registrations/new.html.erb within layouts/application
+  Rendered public/members/shared/_error_messages.html.erb (0.5ms)
+  Rendered public/members/registrations/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 184ms (Views: 106.1ms | ActiveRecord: 0.7ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome-sprockets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/members" for 211.123.238.51 at 2021-09-17 06:34:35 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::Members::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xG1/nds+zmGHY9HDT/8AaiIDJsFC9If1Mj7xbs3SWJdkxgHYItirGGNyoFT1sSBzWDDSZD/+y3Vsz/YOVDrHtg==", "member"=>{"last_name"=>"rr", "first_name"=>"rr", "last_name_kana"=>"rr", "first_name_kana"=>"rr", "email"=>"r@r", "postal_code"=>"rr", "address"=>"rr", "phone_number"=>"rr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "r@r"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Create (9.5ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "first_name", "last_name", "first_name_kana", "last_name_kana", "address", "postal_code", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "r@r"], ["encrypted_password", "$2a$12$djwlp87T1NpwH9mJecV/BuZlYPGb9ipqd59RLNmGvD./6h1CXpT52"], ["first_name", "rr"], ["last_name", "rr"], ["first_name_kana", "rr"], ["last_name_kana", "rr"], ["address", "rr"], ["postal_code", "rr"], ["phone_number", "rr"], ["created_at", "2021-09-17 06:34:36.143167"], ["updated_at", "2021-09-17 06:34:36.143167"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (16.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://8bfdddc9e84c4104b6fd6166845b8d81.vfs.cloud9.us-east-1.amazonaws.com/public/members/mypage.8
+Completed 302 Found in 428ms (ActiveRecord: 26.0ms)
+
+
+Started GET "/public/members/mypage.8" for 211.123.238.51 at 2021-09-17 06:34:36 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::MembersController#show as 
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering public/members/show.html.erb within layouts/application
+  Rendered public/members/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 102ms (Views: 90.4ms | ActiveRecord: 0.2ms)
+
+
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome-sprockets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/public/members/8/edit" for 211.123.238.51 at 2021-09-17 06:34:42 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::MembersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering public/members/edit.html.erb within layouts/application
+  Rendered public/members/edit.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 152ms (Views: 147.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/public/members/8" for 211.123.238.51 at 2021-09-17 06:34:44 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::MembersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h+PTPL8G4XdVCYwuiI1tbnJm3NtPqC6qGuANuoNFWt2xNjecFU25yT0BUPzG8KEKryRaX5B24/8n/7jbr5y0pw==", "member"=>{"last_name"=>"rr", "first_name"=>"rr", "last_name_kana"=>"rr", "first_name_kana"=>"rr", "postal_code"=>"rr", "address"=>"rrr", "phone_number"=>"rr", "email"=>"r@r"}, "commit"=>"編集内容を保存する", "id"=>"8"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/public/members_controller.rb:16
+  [1m[36mMember Update (1.8ms)[0m  [1m[33mUPDATE "members" SET "address" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["address", "rrr"], ["updated_at", "2021-09-17 06:34:44.679667"], ["id", 8]]
+  ↳ app/controllers/public/members_controller.rb:16
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/public/members_controller.rb:16
+Redirected to https://8bfdddc9e84c4104b6fd6166845b8d81.vfs.cloud9.us-east-1.amazonaws.com/public/members/mypage.8
+Completed 200 OK in 52ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/public/members/mypage.8" for 211.123.238.51 at 2021-09-17 06:34:44 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::MembersController#show as 
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering public/members/show.html.erb within layouts/application
+  Rendered public/members/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 111ms (Views: 106.2ms | ActiveRecord: 0.1ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome-sprockets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/public/members/8/edit" for 211.123.238.51 at 2021-09-17 06:34:47 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::MembersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering public/members/edit.html.erb within layouts/application
+  Rendered public/members/edit.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 111ms (Views: 106.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/public/members/unsubscribe.8" for 211.123.238.51 at 2021-09-17 06:34:49 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::MembersController#unsubscribe as 
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering public/members/unsubscribe.html.erb within layouts/application
+  Rendered public/members/unsubscribe.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 194ms (Views: 186.9ms | ActiveRecord: 0.1ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome-sprockets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/public/members/withdrawal" for 211.123.238.51 at 2021-09-17 06:34:53 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::MembersController#withdrawal as HTML
+  Parameters: {"authenticity_token"=>"BfavPZOiop8w21G9JbHyhUAcPhfrzpVM//cbRsFWFyylXdF4akTH5tTKICqf/9KcOi/KspbE2cyhBhwmWL6IDQ=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/public/members_controller.rb:32
+  [1m[36mMember Update (1.4ms)[0m  [1m[33mUPDATE "members" SET "is_deleted" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["is_deleted", 1], ["updated_at", "2021-09-17 06:34:53.071942"], ["id", 8]]
+  ↳ app/controllers/public/members_controller.rb:32
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/public/members_controller.rb:32
+Redirected to https://8bfdddc9e84c4104b6fd6166845b8d81.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 14ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 211.123.238.51 at 2021-09-17 06:34:53 +0000
+Cannot render console from 211.123.238.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome-sprockets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.6) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.6) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
