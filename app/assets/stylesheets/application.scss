@@ -22,11 +22,11 @@ header{
  border-bottom: 1px solid black;
 }
 
-.header-logo{
+.font{
  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
 }
 
-.header-logo a, .store-icon{
+.header-logo a, .store-icon, .about-text{
  font-size: 28px;
 }
 
@@ -36,6 +36,6 @@ header{
 }
 
 footer{
- height: 125px;
+ height: 100px;
  border-top: 1px solid black;
 }
