@@ -61,11 +61,10 @@ Rails.application.routes.draw do
   end
 
   namespace :public do
-    resources :members, only: [:edit, :update]
     get 'members/mypage' => 'members#show', as: 'mypage'
     get 'members/unsubscribe' => 'members#unsubscribe', as: 'unsubscribe'
     patch 'members/withdrawal' => 'members#withdrawal', as: 'withdrawal'
-
+    resources :members, only: [:edit, :update]
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
