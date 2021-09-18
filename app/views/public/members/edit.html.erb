@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col">
+      <h3><strong>会員情報編集</strong></h3>
+      <%= form_with(model:@member, url:public_member_path ,method: :PATCH) do |f| %>
+      <!-- Ajaxによる送信という意味（local: trueがなしの場合）-->
+
+        <div>
+            <div>
+              <%= f.label :"氏名" %>
+              <%= f.text_field :last_name %>
+              <%= f.text_field :first_name %>
+            </div>
+            <div>
+              <%= f.label :"フリガナ" %>
+              <%= f.text_field :last_name_kana %>
+              <%= f.text_field :first_name_kana %>
+            </div>
+            <div>
+              <%= f.label :"郵便番号" %>
+              <%= f.text_field :postal_code %>
+            </div>
+            <div>
+              <%= f.label :"住所" %>
+              <%= f.text_field :address %>
+            </div>
+            <div>
+              <%= f.label :"電話番号(ハイフンなし)" %>
+              <%= f.text_field :phone_number %>
+            </div>
+            <div>
+              <%= f.label :"メールアドレス" %>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            </div>
+        </div>
+
+        <div class="actions">
+        <p>
+          <%= f.submit "編集内容を保存する" %>
+          <%= link_to " 退会する", public_unsubscribe_path(@member) %>
+        </p>
+        </div>
+      <% end %>
+    </div>
+</div>
