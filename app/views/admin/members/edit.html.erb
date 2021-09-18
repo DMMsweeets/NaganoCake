@@ -1,2 +1,57 @@
-<h1>Admin::Members#edit</h1>
-<p>Find me in app/views/admin/members/edit.html.erb</p>
+ <%= notice %>
+
+ <h2>会員情報編集</h2>
+
+   <%= form_with model:@member, url: admin_member_path do |f| %>
+
+  <table>
+    <tr>
+      <th><%= f.label :会員ID %></th>
+      <td><%= f.text_field :id %></td>
+    </tr>
+
+    <tr>
+      <th><%= f.label :氏名 %></th>
+      <td><%= f.text_field :last_name %><br>
+          <%= f.text_field :first_name %>
+      </td>
+    </tr>
+
+    <tr>
+      <th><%= f.label :フリガナ %></th>
+      <td><%= f.text_field :last_name_kana %><br>
+      <%= f.text_field :first_name_kana %>
+      </td>
+    </tr>
+
+    <tr>
+      <th><%= f.label :郵便番号 %></th>
+      <td><%= f.text_field :postal_code%></td>
+    </tr>
+
+    <tr>
+      <th><%= f.label :住所 %></th>
+      <td><%= f.text_field :address %></td>
+    </tr>
+
+    <tr>
+      <th><%= f.label :電話番号 %></th>
+      <td><%= f.text_field :phone_number %></td>
+    </tr>
+
+    <tr>
+      <th><%= f.label :メールアドレス %></th>
+      <td><%= f.text_field :email%></td>
+    </tr>
+
+    <tr>
+      <th><%= f.label :会員ステータス %></th>
+      <td><%= f.select :is_deleted, [["有効","false"], ["退会済み","true"]] %></td>
+    </tr>
+  </table>
+
+
+      <div>
+        <%= f.submit "変更を保存する" %>
+      </div>
+  <% end %>
