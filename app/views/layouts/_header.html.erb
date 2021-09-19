@@ -1,15 +1,19 @@
 <header>
-  <div class="container">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container-fluid bg-light">
+    <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
       <!--店名-->
       <div class="header-logo">
-        <%= link_to root_path, class: 'navbar-brand mt-3' do %>
+        <%= link_to root_path, class: 'navbar-brand mt-3 mr-auto' do %>
           <i class="fas fa-store-alt store-icon">ながのCAKE</i>
         <% end %>
       </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <!--ナビゲーションメニュー-->
-      <div class="header-nav ml-auto">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-3 mt-lg-0 ">
           <!--メンバーヘッダー-->
           <% if member_signed_in? %>
             <li class="mt-4 mr-5 font">ようこそ、<%= current_member.first_name %>さん！</li>
@@ -61,7 +65,7 @@
       </div>
     </nav>
     <!--検索フォーム-->
-    <div class="text-right">
+    <div class="text-right bg-light">
       <%= form_with do |f| %>
         <%= f.text_field :content, :placeholder => "Search", class: 'mr-3 w-25'%>
         <i class="fas fa-search search-icon fa-flip-horizontal text-info"></i>
@@ -70,3 +74,18 @@
      </div>
   </div>
 </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
