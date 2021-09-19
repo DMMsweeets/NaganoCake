@@ -4,6 +4,8 @@ class Member < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :cart_items, dependent: :destroy
+
     # 退会機能（ログインする時に退会済み(is_deleted==true)のユーザーを弾くため）
     def active_for_authentication?
       super && (self.is_deleted == false)

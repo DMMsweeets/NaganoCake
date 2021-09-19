@@ -52,12 +52,12 @@ Rails.application.routes.draw do
   end
 
   namespace :public do
-    resources :cart_items, only: [:index, :create, :destroy, :update]
-    delete 'cart_items/destroy_all' => 'cart_items#destroy_all', as: 'destroy_all'
+    resources :items, only: [:index, :show]
   end
 
   namespace :public do
-    resources :items, only: [:index, :show]
+    delete 'cart_items/destroy_all' => 'cart_items#destroy_all', as: 'destroy_all'
+    resources :cart_items, only: [:index, :create, :destroy, :update]
   end
 
   namespace :public do
