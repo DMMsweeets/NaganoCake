@@ -11,7 +11,7 @@
       <!--カート追加ボタン-->
       <% if member_signed_in? %>
         <div class="item-count form-group">
-          <%= form_with model: @cart_item, url: public_cart_items_path, local: true, class: 'form-inline mt-5' do |f| %>
+          <%= form_with model: @cart_item,url: public_cart_items_path(item_id: @item), method: :post, local: true, class: 'form-inline mt-5' do |f| %>
             <%= f.select :amount, options_for_select({"1個"=>1, "2個"=>2, "3個"=>3, "4個"=>4, "5個"=>5}), { include_blank: '個数選択'}, class: 'form-control'%>
             <%= f.submit 'カートに入れる', class: 'btn btn btn-success ml-5' %>
           <% end %>
@@ -20,3 +20,4 @@
     </div>
   </div>
 </div>
+
