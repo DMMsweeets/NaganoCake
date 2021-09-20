@@ -66,10 +66,12 @@
     </nav>
     <!--検索フォーム-->
     <div class="text-right bg-light">
-      <%= form_with do |f| %>
-        <%= f.text_field :content, :placeholder => "Search", class: 'mr-3 w-25'%>
+
+      <%= form_tag(public_search_path, method: :get) do %>
+   　　　　<!--class: 'mr-3 w-25'-->
+        <%= text_field_tag (:name)%>
         <i class="fas fa-search search-icon fa-flip-horizontal text-info"></i>
-        <% f.submit %>
+        　<% submit_tag %>
       <% end %>
      </div>
   </div>

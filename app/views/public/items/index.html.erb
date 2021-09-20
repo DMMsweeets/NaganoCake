@@ -4,7 +4,7 @@
     <%= render 'public/items/genre', genres: @genres %>
     <!--商品一覧-->
     <div class="item-list col-sm-9">
-      <h3><strong>商品一覧</strong>(全<%= @item_counts.size%>件)</h3>
+      <h3><strong>商品一覧(全<%= @item_counts.size%>件)</strong></h3>
       <% @items.each do |item|%>
         <div class="d-inline-block">
           <%= attachment_image_tag item, :image, :fill,200,200, format: 'jpeg', fallback: 'noimage.jpg' %>
