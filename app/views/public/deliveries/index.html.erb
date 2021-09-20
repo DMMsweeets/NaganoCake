@@ -1,18 +1,18 @@
 <%= notice %>
-<div class="container my-5">
-  <h2>配送先登録/一覧</h2>
+<div class="container my-4">
+  <h3>配送先登録/一覧</h3>
   <!--配送先新規登録フォーム-->
-  <div class="delivery-form form-group mb-5 row">
+  <div class="delivery-form form-group mb-5">
     <%= form_with model: @delivery, url: public_deliveries_path, local: true, class: 'form-inline' do |f| %>
-      <label class="col-sm-3" for="delivery_postal_code">郵便番号(ハイフンなし)</label>
+      <%= f.label :postal_code, '郵便番号(ハイフンなし)', class: 'col-sm-3 col-form-label'%>
       <div class="col-sm-9 mb-2">
         <%= f.text_field :postal_code, :placeholder => "0000000", autofocus: true, class: 'form-control w-25'%>
       </div>
-      <label class="col-sm-3" for="delivery_address">住所</label>
+      <%= f.label :address, '住所', class: 'col-sm-3 col-form-label' %>
       <div class="col-sm-9 mb-2">
         <%= f.text_field :address, :placeholder => "東京都渋谷区代々木区神園町0-0", class: 'form-control w-75'%>
       </div>
-      <label class="col-sm-3" for="delivery_name">宛名</label>
+      <%= f.label :name, '宛名', class: 'col-sm-3 col-form-label' %>
       <div class="col-sm-8 mb-2">
         <%= f.text_field :name, :placeholder => "令和道子", class: 'form-control w-25'%>
       </div>

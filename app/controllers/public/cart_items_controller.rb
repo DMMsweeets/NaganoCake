@@ -2,6 +2,7 @@ class Public::CartItemsController < ApplicationController
 
   def index
     @cart_items = current_member.cart_items
+    
     @total_price = @cart_items.sum{|cart_item|cart_item.item.price * cart_item.amount * 1.1}
     # sum：合計金額を出す
     # 1行目の@cart_itemsにsumメソッドを用いて{}の||ブロック変数にcart_itemを代入

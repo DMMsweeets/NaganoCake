@@ -1,3 +1,4 @@
+<%= notice %>
 <div class="row">
     <div class="col">
       <div>
@@ -20,7 +21,7 @@
             <td><%= cart_item.item.name %></td>
             <!--(price * 1.1).floor→税込の計算,:delimiterオプション→桁区切り -->
             <td>¥<%= ((cart_item.item.price * 1.1).floor).to_s(:delimited, delimiter: ',') %></td>
-            
+
             <td>
                 <%= form_for(cart_item, url: public_cart_item_path(cart_item)) do |c| %>
                 <p>
