@@ -9,7 +9,7 @@
         <div class="d-inline-block">
           <%= attachment_image_tag item, :image, :fill,200,200, format: 'jpeg', fallback: 'noimage.jpg' %>
           <p><%= link_to item.name, public_item_path(item.id), class: 'text-dark'%></p>
-          <p>¥<%= item.price %></p>
+          <p>¥<%= (item.price).to_s(:delimited, delimiter: ',') %></p>
         </div>
       <% end %>
       <%= paginate @items %>
