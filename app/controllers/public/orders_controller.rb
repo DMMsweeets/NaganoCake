@@ -18,7 +18,7 @@ class Public::OrdersController < ApplicationController
     @total_price = @cart_items.sum{|cart_item|cart_item.item.price * cart_item.amount * 1.1}
     @postage = 800
     @order = Order.new(order_params)
-    @tax_price = @order.total_price + 800
+    @tax_price = @order.total_price + @postage
     if @order.save
       @cart_items.each{|cart_item| OrderDetail.create(order_id: @order.id, item_id: cart_item.item.id, amount: cart_item.amount, tax_price: @tax_price)}
       @cart_items.each{|cart_item| cart_item.destroy}
@@ -34,22 +34,22 @@ class Public::OrdersController < ApplicationController
     @cart_items = current_member.cart_items
     @total_price = @cart_items.sum{|cart_item|cart_item.item.price * cart_item.amount * 1.1}
     @tax_price = @total_price + 800
-    @order.payment = params[:order][:payment]
+    @order.payment = params[:payment]
 
-    if params[:order][:address_value] == "0"
+    if params[:address_value] == "0"
       @order.name = current_member.full_name
       @order.address = current_member.address
       @order.postal_code = current_member.postal_code
-    elsif params[:order][:address_value] == "1"
-      @address = params[:order][:address].to_i
+    elsif params[:address_value] == "1"
+      @address = params[:address].to_i
       @delivery = Delivery.find(@address)
       @order.name = @delivery.name
       @order.address = @delivery.address
       @order.postal_code = @delivery.postal_code
-    elsif params[:order][:address_value] == "2"
-      @order.name = params[:order][:new_name]
-      @order.address = params[:order][:new_address]
-      @order.postal_code = params[:order][:new_postal_code]
+    elsif params[:address_value] == "2"
+      @order.name = params[:new_name]
+      @order.address = params[:new_address]
+      @order.postal_code = params[:new_postal_code]
     end
   end
 
@@ -60,5 +60,4 @@ class Public::OrdersController < ApplicationController
     params.require(:order).permit(:payment, :name, :address, :postal_code, :member_id, :total_price, :postage)
           .merge(member_id: current_member.id, total_price: @total_price, postage: @postage)
   end
-
 end

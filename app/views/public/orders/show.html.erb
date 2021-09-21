@@ -1,4 +1,4 @@
-<div class="container my-4">
+<div class="container my-5">
   <h3>注文履歴詳細</h3>
   <div class="row mt-4">
     <!--注文情報-->
@@ -44,7 +44,7 @@
           </tr>
           <tr>
             <th class="table-active">ご請求額</th>
-            <td><%= (@order.total_price + 800).to_s(:delimited, delimiter: ',') %></td>
+            <td><%= (@order.total_price + @order.postage).to_s(:delimited, delimiter: ',') %></td>
           </tr>
         </tbody>
       </table>
