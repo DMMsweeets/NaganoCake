@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
 
+  get 'rails/g'
+  get 'rails/controller'
+  get 'rails/searches'
    devise_for :members, controllers: {
     sessions:      'public/members/sessions',
     passwords:     'public/members/passwords',
@@ -52,6 +55,7 @@ Rails.application.routes.draw do
   end
 
   namespace :public do
+    get 'search' => 'items#search'
     resources :items, only: [:index, :show]
   end
 
