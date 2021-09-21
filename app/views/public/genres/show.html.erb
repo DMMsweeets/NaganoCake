@@ -2,7 +2,7 @@
  <div class="row">
     <!--ジャンル一覧-->
 	<%= render 'public/items/genre', genres: @genres %>
-    <!--ジャンルで絞り込んだ商品一覧-->
+    <!--ジャンルで絞り込んだ商品の一覧-->
   <div class="item-list col-sm-9">
    <h2><strong><%= @genre.name %>一覧(全<%= @items.count %>件)</strong></h2>
 
@@ -16,7 +16,7 @@
 			</div>
 		<% end %>
 
-	  <div style="text-align: center;"><%= paginate @items %></div>
+	  <div><%= paginate @items %></div>
   </div>
  </div>
 </div>
