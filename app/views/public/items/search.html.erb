@@ -1,22 +1,24 @@
-<div class="container my-5">
+<div class="container my-5 height">
   <div class="row">
     <!--ジャンル一覧-->
     <%= render 'public/items/genre', genres: @genres %>
     <div class="item-list col-sm-9">
-
 　　<!--検索ワードがヒットしない時-->
 　　  <% if @items.empty? %>
   　　  　<h2>別のワードでお試しください</h2>
 　　  <% else %>
 　　<!--商品一覧-->
-　　    <h3><strong><%= params[:name] %>一覧</strong></h3>
-    　   <% @items.each do |item| %>
-    　　   <div class="d-inline-block">
-        　 <%= attachment_image_tag item, :image, :fill,200,200, format: 'jpeg', fallback: 'noimage.jpg' %><br>
-        　 <%= link_to item.name, public_item_path(item.id), class: 'text-dark'%><br>
-        　 ¥<%= item.price %><br>
-    　 　 </div>
-    　   <% end %>
+　　    <h3 class="font pb-1"><strong><%= params[:name] %>一覧</strong></h3>
+    　  <% @items.each do |item|%>
+        <div class="d-inline-block">
+          <%= link_to public_item_path(item.id), class: 'text-decoration-none img-wrap' do %>
+            <%= attachment_image_tag item, :image, :fill,200,200, format: 'jpeg', fallback: 'noimage.jpg', class: 'item-target' %>
+            <p class="text-dark"><%= item.name %></p>
+            <p class="text-dark"><%= item.genre.name %></p>
+            <p class="text-dark">¥<%= (item.price).to_s(:delimited, delimiter: ',') %></p>
+          <% end %>
+        </div>
+      <% end %>
       <% end %>
      </div>
   </div>

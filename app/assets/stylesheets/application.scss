@@ -18,8 +18,12 @@
  @import 'font-awesome';
 
 header{
- height: 120px;
- border-bottom: 1px solid black;
+ height: 125px;
+ background-color: rgba(255, 255, 255, 0.9);
+}
+
+.store-icon{
+ line-height: 45px;
 }
 
 .font{
@@ -30,12 +34,63 @@ header{
  font-size: 28px;
 }
 
+.search_tab{
+ position: relative;
+ right: 95px;
+ bottom: 40px;
+}
+
 .search-icon{
  position: relative;
- right: 40px;
+ right: 30px;
+}
+
+.example{
+ padding: 0px 0px;
+ .image1 {
+   background-image: url(cake.jpg);
+ }
+ .image2 {
+   background-image: url(cake1.jpg);
+ }
+ .image3 {
+   background-image: url(wedding.jpg);
+ }
+ h4 {
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  }
+ }
+
+.title-border{
+ border-bottom: 2px solid #000000;
 }
 
 footer{
- height: 100px;
- border-top: 1px solid black;
+ height: 140px;
+ background-color: black;
+ p{
+  color: #fff;
+ }
+}
+
+.height{
+ height: 500px;
+}
+
+.img-wrap {
+ overflow: hidden;
+ .item-target{
+  transition-duration: 0.5s;
+ }
+ .item-target:hover{
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+ }
 }
