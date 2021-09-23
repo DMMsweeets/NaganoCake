@@ -3,7 +3,11 @@
     <!-- ジャンルのサイドバーを表示 -->
     <%= render "public/items/genre", genres: @genres %>
     <div class="col-md-8 mx-auto example"><!---xs-9 col-xs-offset-1-->
-      <%= image_tag 'cake.jpg', class: 'top-image'%>
+      <div id="theTarget">
+        <div class='top-image image1'></div>
+        <div class='top-image image2'></div>
+        <div class='top-image image3'></div>
+      </div>
       <h4 class="text-center top-text font">
         <strong>
         ようこそ、ながのCakeへ！<br>
@@ -21,8 +25,8 @@
       <div class="item--card-content d-flex align-items-start">
         <% @items.last(4).each do |item| %>
           <div class="col-xs-3 offset-md-3 mx-auto" style="padding-right: 0px; padding-left: 0px;">
-            <%= link_to public_item_path(item.id) ,style: "color: black;", data: {"turbolinks" => false}, class: 'text-decoration-none' do %>
-              <%= attachment_image_tag item, :image, :fill,200,200, format: 'jpeg',fallback: "no_image.jpg", class: 'card-img-top' %><br>
+            <%= link_to public_item_path(item.id) ,style: "color: black;", data: {"turbolinks" => false}, class: 'text-decoration-none img-wrap' do %>
+              <%= attachment_image_tag item, :image, :fill,200,200, format: 'jpeg',fallback: "no_image.jpg", class: 'card-img-top item-target' %><br>
               <p><%= item.name %></p><br>
               <p >¥<%= item.price.to_s(:delimited, delimiter: ',') %></p>
             <% end %>

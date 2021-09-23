@@ -22,10 +22,6 @@ header{
  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.header-nav{
- border-top: 1px solid red;
-}
-
 .store-icon{
  line-height: 45px;
 }
@@ -51,6 +47,15 @@ header{
 
 .example{
  padding: 0px 0px;
+ .image1 {
+   background-image: url(cake.jpg);
+ }
+ .image2 {
+   background-image: url(cake1.jpg);
+ }
+ .image3 {
+   background-image: url(wedding.jpg);
+ }
  h4 {
   color: #fff;
   width: 100%;
@@ -61,9 +66,6 @@ header{
   bottom: 0;
   background: rgba(0,0,0,0.5);
   }
-  img {
-  width: 100%;
-  }
  }
 
 .title-border{
@@ -71,8 +73,7 @@ header{
 }
 
 footer{
- height: 100px;
- border-top: 1px solid black;
+ height: 140px;
  background-color: black;
  p{
   color: #fff;
@@ -80,5 +81,16 @@ footer{
 }
 
 .height{
- height: 480px;
+ height: 500px;
+}
+
+.img-wrap {
+ overflow: hidden;
+ .item-target{
+  transition-duration: 0.5s;
+ }
+ .item-target:hover{
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+ }
 }

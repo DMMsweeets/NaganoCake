@@ -15,47 +15,47 @@
           <% if member_signed_in? %>
             <li class="mt-4 mr-5 font">ようこそ、<%= current_member.first_name %>さん！</li>
             <%= link_to public_mypage_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">マイページ</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">マイページ</li>
             <% end %>
             <%= link_to public_items_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">商品一覧</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">商品一覧</li>
             <% end %>
             <%= link_to public_cart_items_path, class:'nav-link' do %>
-               <li class="nav-item nav-btn mr-3 font">カート</li>
+               <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">カート</li>
             <% end %>
             <%= link_to destroy_member_session_path, method: :delete, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">ログアウト</li>
+              <li class="nav-item nav-btn font px-4 border-left border-right border-secondary">ログアウト</li>
             <% end %>
           <!--管理者ヘッダー-->
           <% elsif admin_signed_in? %>
             <%= link_to admin_items_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">商品一覧</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">商品一覧</li>
             <% end %>
             <%= link_to admin_members_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">会員一覧</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">会員一覧</li>
             <% end %>
             <%= link_to admin_orders_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">注文履歴一覧</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">注文履歴一覧</li>
             <% end %>
             <%= link_to admin_genres_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">ジャンル一覧</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">ジャンル一覧</li>
             <% end %>
             <%= link_to destroy_admin_session_path, method: :delete, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">ログアウト</li>
+              <li class="nav-item nav-btn font px-4 border-left border-right border-secondary">ログアウト</li>
             <% end %>
           <!--ログイン前ヘッダー-->
           <% else %>
             <%= link_to homes_about_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-5 font">About</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">About</li>
             <% end %>
             <%= link_to public_items_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-5 font">商品一覧</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">商品一覧</li>
             <% end %>
             <%= link_to new_member_registration_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-5 font">新規登録</li>
+              <li class="nav-item nav-btn font pl-4 pr-2 border-left border-secondary">新規登録</li>
             <% end %>
             <%= link_to new_member_session_path, class:'nav-link' do %>
-              <li class="nav-item nav-btn mr-3 font">ログイン</li>
+              <li class="nav-item nav-btn font px-4 border-left border-right border-secondary">ログイン</li>
             <% end %>
           <% end %>
         </ul>
