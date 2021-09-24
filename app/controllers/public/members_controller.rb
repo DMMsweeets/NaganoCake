@@ -5,7 +5,7 @@ class Public::MembersController < ApplicationController
   def show
     @member = current_member
   end
-  
+
   #ユーザ編集画面を表示する
   def edit
     @member = current_member
@@ -24,7 +24,7 @@ class Public::MembersController < ApplicationController
   #今回なし
   def unsubscribe
   end
- 
+
   #論理的削除の退会機能
   def withdrawal
     member = current_member
@@ -36,9 +36,9 @@ class Public::MembersController < ApplicationController
     flash[:notice] = "ありがとうございました。またお待ちしております。"
     redirect_to root_path
   end
-  
-  
-  
+
+
+
 
     # ストロングパラメーター
     private
