@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
+
+header{
+ height: 125px;
+ background-color: rgba(255, 255, 255, 0.9);
+}
+
+.store-icon{
+ line-height: 45px;
+}
+
+.font{
+ font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+}
+
+.header-logo a, .store-icon, .about-text{
+ font-size: 28px;
+}
+
+.search_tab{
+ position: relative;
+ right: 95px;
+ bottom: 40px;
+}
+
+.search-icon{
+ position: relative;
+ right: 30px;
+}
+
+.example{
+ padding: 0px 0px;
+ height: 450px;
+ .image1 {
+   background-image: url(cake.jpg);
+ }
+ .image2 {
+   background-image: url(cake1.jpg);
+ }
+ .image3 {
+   background-image: url(wedding.jpg);
+ }
+ h4 {
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  }
+ }
+
+.title-border{
+ border-bottom: 2px solid #000000;
+}
+
+footer{
+ height: 140px;
+ background-color: black;
+ p{
+  color: #fff;
+ }
+}
+
+.height{
+ height: 600px;
+}
+
+.img-wrap {
+ overflow: hidden;
+ .item-target{
+  transition-duration: 0.5s;
+ }
+ .item-target:hover{
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+ }
+}

@@ -1,0 +1,50 @@
+<div class="container my-5 h-25">
+  <h2 class="font title-border pb-1 mt-5"><%=@member.last_name + '' + @member.first_name %>の会員情報詳細</h2>
+　<table class="table table-borderless">
+    <tr>
+      <th>顧客ID</th>
+      <td><%= @member.id %></td>
+    </tr>
+    <tr>
+      <th>氏名</th>
+      <td>
+        <%= @member.last_name %>
+        <%= @member.first_name %>
+      </td>
+    </tr>
+    <tr>
+      <th>フリガナ</th>
+      <td><%= @member.last_name_kana %><%= @member.first_name_kana %></td>
+    </tr>
+    <tr>
+      <th>郵便番号</th>
+      <td><%= @member.postal_code %></td>
+    </tr>
+    <tr>
+      <th>住所</th>
+      <td><%= @member.address %></td>
+    </tr>
+    <tr>
+      <th>電話番号</th>
+      <td><%= @member.phone_number %></td>
+    </tr>
+    <tr>
+      <th>メールアドレス</th>
+      <td><%= @member.email %></td>
+    </tr>
+    <tr>
+      <th>会員ステータス</th>
+      <td>
+        <% if @member.is_deleted == false %>
+          <p class="text-success">有効</p>
+        <% else %>
+          <p class="text-danger">退会済み</p>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+  <div class="actions text-center py-3 row">
+    <p class="col-md-6"><%= link_to "編集する", edit_admin_member_path(@member), class: "btn btn-success" %></p>
+    <p class="col-md-6"><%= link_to "注文一覧を見る",admin_orders_path, class: "btn btn-primary" %></p>
+  </div>
+</div>

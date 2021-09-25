@@ -1,0 +1,21 @@
+<div class="container delivery-edit">
+  <h2>配送先編集</h2>
+  <!--配送先新規登録フォーム-->
+  <div class="delivery-form form-group row">
+    <%= form_with model: @delivery, url: public_delivery_path, local: true, class: 'form-inline' do |f| %>
+      <label class="col-sm-3" for="delivery_postal_code">郵便番号(ハイフンなし)</label>
+      <div class="col-sm-9 mb-2">
+        <%= f.text_field :postal_code, :placeholder => "0000000", autofocus: true, class: 'form-control w-25'%>
+      </div>
+      <label class="col-sm-3" for="delivery_address">住所</label>
+      <div class="col-sm-9 mb-2">
+        <%= f.text_field :address, :placeholder => "東京都渋谷区代々木区神園町0-0", class: 'form-control w-75'%>
+      </div>
+      <label class="col-sm-3" for="delivery_name">宛名</label>
+      <div class="col-sm-7 mb-2">
+        <%= f.text_field :name, :placeholder => "令和道子", class: 'form-control w-25'%>
+      </div>
+      <%= f.submit '変更内容を保存', class: 'btn btn-success col-sm-2'%>
+    <% end %>
+  </div>
+</div>

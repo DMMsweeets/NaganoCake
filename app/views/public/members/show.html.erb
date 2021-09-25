@@ -1,0 +1,47 @@
+<div class="container my-5 h-75">
+	<h3 class="font title-border pb-1 mt-4">マイページ</h3>
+	<div class="row">
+  	<h4 class="font ml-3 pr-5">登録情報<h4>
+    <%= link_to '編集する', edit_public_member_path(@member), class:"btn btn-sm btn-success" %>
+	</div>
+	<table class="table table-bordered">
+		<tbody>
+			<tr>
+				<th style="background-color: #dad7d7; border-bottom: 1px solid #fff;">氏名</th>
+				<td><%= @member.last_name %> <%= @member.first_name %></td>
+			</tr>
+			<tr>
+			<th style="background-color: #dad7d7; border-bottom: 1px solid #fff;">カナ</th>
+				<td><%= @member.last_name_kana %> <%= @member.first_name_kana %></td>
+			</tr>
+			<tr>
+				<th style="background-color: #dad7d7; border-bottom: 1px solid #fff;">郵便番号</th>
+				<td>〒 <%= @member.postal_code %></td>
+			</tr>
+			<tr>
+				<th style="background-color: #dad7d7; border-bottom: 1px solid #fff;">住所</th>
+				<td><%= @member.address %></td>
+			</tr>
+			<tr>
+				<th style="background-color: #dad7d7; border-bottom: 1px solid #fff;">電話番号</th>
+				<td><%= @member.phone_number %></td>
+			</tr>
+			<tr>
+				<th style="background-color: #dad7d7; border-bottom: 1px solid #fff;">メールアドレス</th>
+				<td style="border-bottom: 1px solid #dad7d7;"><%= @member.email %></td>
+			</tr>
+		</tbody>
+　</table>
+	<hr>
+		<div class="row">
+	　　<h4>配送先</h4>
+	　　<%= link_to '一覧を見る', public_deliveries_path, class:"btn btn-outline-primary ml-4" %>
+	　</div>
+	<hr>
+	　<div class="row mb-5">
+	　　<h4>注文履歴</h4>
+	　　<%= link_to  '一覧を見る', public_orders_path, class:"btn btn-outline-primary" %>
+	　</div>
+   </div>
+  </div>
+</div>

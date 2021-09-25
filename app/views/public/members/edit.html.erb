@@ -1,0 +1,36 @@
+<div class="container my-5 h-25">
+  <h3 class="font title-border pb-1 mt-5">会員情報編集</h3>
+  <%= form_with(model:@member, url:public_member_path ,method: :PATCH) do |f| %>
+    <!-- Ajaxによる送信という意味（local: trueがなしの場合）-->
+    <div class="form-group pt-3 text-center row">
+      <%= f.label "氏名", class: 'col-sm-3 col-form-label' %>
+      <%= f.text_field :last_name, class: "form-control mr-1 w-25" %>
+      <%= f.text_field :first_name, class: "form-control w-25" %>
+    </div>
+    <div class="form-group pt-3 text-center row">
+      <%= f.label "フリガナ", class: 'col-sm-3 col-form-label' %>
+      <%= f.text_field :last_name_kana, class: "form-control mr-1 w-25" %>
+      <%= f.text_field :first_name_kana, class: "form-control w-25" %>
+    </div>
+    <div class="form-group pt-3 text-center row">
+      <%= f.label :postal_code, "郵便番号", class: 'col-sm-3 col-form-label' %>
+      <%= f.text_field :postal_code, class: "form-control w-25" %>
+    </div>
+    <div class="form-group pt-3 text-center row">
+      <%= f.label :address, "住所", class: 'col-sm-3 col-form-label' %>
+      <%= f.text_field :address, class: "form-control w-25" %>
+    </div>
+    <div class="form-group pt-3 text-center row">
+      <%= f.label :phone_number, "電話番号(ハイフンなし)", class: 'col-sm-3 col-form-label' %>
+      <%= f.text_field :phone_number, class: "form-control w-25" %>
+    </div>
+    <div class="form-group pt-3 text-center row">
+      <%= f.label :email, "メールアドレス", class: 'col-sm-3 col-form-label' %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control w-25" %>
+    </div>
+    <div class="actions text-center py-3 row">
+      <p class="col-md-6"><%= f.submit "編集内容を保存する", class: 'btn btn-success' %></p>
+      <p class="col-md-6"><%= link_to " 退会する", public_unsubscribe_path(@member), class: 'btn btn-outline-danger' %></p>
+    </div>
+  <% end %>
+</div>
