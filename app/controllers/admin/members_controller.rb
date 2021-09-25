@@ -1,8 +1,8 @@
 class Admin::MembersController < ApplicationController
   before_action :authenticate_admin!,only: [:show,:edit,:update,:index]
-  
+
   def index
-    @members = Member.page(params[:page]).per(10)
+    @members = Member.page(params[:page]).per(8)
   end
 
   def show
