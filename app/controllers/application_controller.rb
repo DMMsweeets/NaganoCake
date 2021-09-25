@@ -6,10 +6,19 @@ class ApplicationController < ActionController::Base
         when Admin
           admin_orders_path
         when Member
-          public_mypage_path
-  		end
+          root_path
+    end
   end
+  
+  
 
+  def after_sign_out_path_for(resource)
+      if resource == :admin
+      new_admin_session_path
+      else
+      new_member_session_path
+      end
+  end
 
   protected
 
