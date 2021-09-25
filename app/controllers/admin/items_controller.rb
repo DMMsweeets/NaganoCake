@@ -20,7 +20,7 @@ class Admin::ItemsController < ApplicationController
        @item = Item.new(item_params)
     if
        @item.save
-      redirect_to admin_items_path
+      redirect_to admin_item_path(@item)
     else
       flash[:notice] = "すべての項目を入力してください"
       redirect_to new_admin_item_path

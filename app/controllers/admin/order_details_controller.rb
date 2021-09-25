@@ -1,24 +1,30 @@
 class Admin::OrderDetailsController < ApplicationController
  	before_action :authenticate_admin!
 
-	def update
-		order_detail =
-		OrderDetail.find(params[:id])
+    def update
+		order_detail = OrderDetail.find(params[:id])
+		order = order_detail.order
+        order_details=OrderDetail.where(order_id: order.id)
 		order_detail.update(order_detail_params)
 
-		case order_detail.make_status
-		 when "製作中"
-				order_detail.order.update(status: "製作中")
-		 when "製作完了"
-			if order_detail.order.order_details.all?{|order_detail| order_detail.make_status == "製作完了"}
-				order_detail.order.update(status: "発送準備中")
-			end
-		end
-		redirect_to admin_order_path(order_detail.order.id)
+     if params[:order_detail][:make_status] == "制作中"
+       order.update(status: 2)
+       redirect_to request.referer
+
+     elsif params[:order_detail][:make_status] == "制作完了"
+       if order_details.all?{|order_detail| order_detail.make_status == "制作完了"}
+         order.update(status: 3)
+       end
+       redirect_to request.referer
+     else
+       redirect_to request.referer
+     end
+
 	end
 
 	private
-   def order_detail_params
+
+     def order_detail_params
 		 params.require(:order_detail).permit(:make_status)
 	 end
 

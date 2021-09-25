@@ -7,19 +7,21 @@ class Admin::OrdersController < ApplicationController
 
 	def show
 		@order = Order.find(params[:id])
-		@order_detail = 
+		@order_detail =
 		@order_details = @order.order_details
 	end
 
 	def update
-		@order = Order.find(params[:id])
-		@order_details = @order.order_details
-    @order.update(order_params)
+		order=Order.find(params[:id])
+    order_details=OrderDetail.where(order_id: order.id)
+    order.update(order_params)
 
-		if @order.status == "入金確認"
-			order_details.update_all(make_status: "製作待ち")
-		end
-		redirect_to admin_order_path(@order.id)
+		 if params[:order][:status] == "入金確認"
+       order_details.each do |order_detail|
+         order_detail.update(make_status: 1)
+       end
+     end
+    redirect_to request.referer
 	end
 
   private
