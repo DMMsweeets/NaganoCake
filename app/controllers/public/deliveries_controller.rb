@@ -1,6 +1,6 @@
 class Public::DeliveriesController < ApplicationController
   def index
-    @deliveries = Delivery.all
+    @deliveries = Delivery.page(params[:page]).per(4)
     @delivery = Delivery.new
   end
 

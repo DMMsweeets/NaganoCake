@@ -27,7 +27,8 @@
           <div class="col-xs-3 offset-md-3 mx-auto" style="padding-right: 0px; padding-left: 0px;">
             <%= link_to public_item_path(item.id) ,style: "color: black;", data: {"turbolinks" => false}, class: 'text-decoration-none img-wrap' do %>
               <%= attachment_image_tag item, :image, :fill,200,200, format: 'jpeg',fallback: "no_image.jpg", class: 'card-img-top item-target' %><br>
-              <p><%= item.name %></p><br>
+              <p><%= item.name %></p>
+              <p class="text-dark"><%= item.genre.name %></p>
               <p >¥<%= item.price.to_s(:delimited, delimiter: ',') %></p>
             <% end %>
           </div>
